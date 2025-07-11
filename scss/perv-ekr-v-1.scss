@@ -1,0 +1,228 @@
+@import './b-mixins';
+
+.perv-ekr-v-1 {
+  padding: 88px 0;
+
+  @include laptop {
+    padding: 60px 0;
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 118%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #000;
+
+    @include laptop {
+      margin-bottom: 25px;
+      font-size: 26px;
+    }
+  }
+
+  &__description {
+    margin: 0 0 50px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: #000;
+
+    @include laptop {
+      margin-bottom: 45px;
+      font-size: 20px;
+    }
+  }
+
+  &__photo {
+    position: relative;
+    margin: 0;
+
+    @include laptop {
+      margin: 0 -15px;
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+
+      @include laptop {
+        min-height: 360px;
+        object-fit: cover;
+      }
+    }
+
+    &-caption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      max-width: 100%;
+      padding: 15px 20px;
+      box-sizing: border-box;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+      background-color: #099b8c;
+
+      @include laptop {
+        left: 12px;
+        max-width: 62%;
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__form {
+    position: relative;
+    z-index: 10;
+    max-width: 732px;
+    margin: -138px 0 0 30px;
+    padding: 20px 24px 18px;
+    background-color: #131b2d;
+
+    @include laptop {
+      margin: -65px 0 0;
+    }
+
+    &-title {
+      margin: 0;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 140%;
+      letter-spacing: -0.01em;
+      color: #fff;
+    }
+
+    &-description {
+      margin: 2px 0 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: -0.01em;
+      color: #9fa5b2;
+
+      @include laptop {
+        margin-top: 8px;
+      }
+    }
+
+    &-callback {
+      display: flex;
+      gap: 14px;
+      margin: 17px 0 0;
+      padding: 0;
+      border: none;
+
+      @include laptop {
+        flex-direction: column;
+      }
+
+      &-name,
+      &-phone,
+      &-button {
+        display: inline-block;
+        flex: 0 0 calc(100% / 3 - 14px / 3 * 2);
+        padding: 9px 14px;
+        box-sizing: border-box;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+        border: none;
+
+        @include laptop {
+          flex: 0 1 auto;
+          padding: 17px 24px;
+        }
+      }
+
+      &-name {
+        color: #9fa5b2;
+        background-color: #ffffff;
+      }
+
+      &-phone {
+        color: #87878e;
+        background-color: #3f434e;
+      }
+
+      &-button {
+        color: #ffffff;
+        text-transform: uppercase;
+        background-color: #099b8c;
+        cursor: pointer;
+      }
+    }
+
+    &-disclaimer {
+      margin: 21px 0 0;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 140%;
+      letter-spacing: -0.01em;
+      color: #9fa5b2;
+
+      & a {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+      }
+    }
+  }
+
+  &__advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px 80px;
+    margin: 58px 0 0;
+
+    @include laptop {
+      margin-top: 50px;
+    }
+
+    &-card {
+      flex: 0 0 calc(100% / 2 - 80px / 2);
+
+      @include laptop {
+        flex: 1 1 100%;
+      }
+
+      &-icon {
+        margin: 0;
+        padding: 0;
+        border: none;
+
+        &-image {
+          display: block;
+          max-width: 100%;
+          width: 64px;
+          height: auto;
+        }
+      }
+
+      &-title {
+        margin: 13px 0 0;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #1c1c20;
+      }
+
+      &-description {
+        margin: 13px 0 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+        color: #000;
+      }
+    }
+  }
+}
