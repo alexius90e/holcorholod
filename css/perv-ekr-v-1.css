@@ -151,13 +151,35 @@
     padding: 17px 24px;
   }
 }
-.perv-ekr-v-1__form-callback-name {
-  color: #9fa5b2;
+.perv-ekr-v-1__form-callback-name, .perv-ekr-v-1__form-callback-phone {
+  color: #87878e;
+  outline: none;
+  background-color: #3f434e;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.perv-ekr-v-1__form-callback-name:focus, .perv-ekr-v-1__form-callback-phone:focus {
+  color: #000000;
   background-color: #ffffff;
 }
-.perv-ekr-v-1__form-callback-phone {
+.perv-ekr-v-1__form-callback-name::-webkit-input-placeholder, .perv-ekr-v-1__form-callback-phone::-webkit-input-placeholder {
   color: #87878e;
-  background-color: #3f434e;
+}
+.perv-ekr-v-1__form-callback-name::-moz-placeholder, .perv-ekr-v-1__form-callback-phone::-moz-placeholder {
+  color: #87878e;
+}
+.perv-ekr-v-1__form-callback-name:-ms-input-placeholder, .perv-ekr-v-1__form-callback-phone:-ms-input-placeholder {
+  color: #87878e;
+}
+.perv-ekr-v-1__form-callback-name::-ms-input-placeholder, .perv-ekr-v-1__form-callback-phone::-ms-input-placeholder {
+  color: #87878e;
+}
+.perv-ekr-v-1__form-callback-name::placeholder, .perv-ekr-v-1__form-callback-phone::placeholder {
+  color: #87878e;
 }
 .perv-ekr-v-1__form-callback-button {
   color: #ffffff;

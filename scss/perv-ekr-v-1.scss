@@ -141,14 +141,23 @@
         }
       }
 
-      &-name {
-        color: #9fa5b2;
-        background-color: #ffffff;
-      }
-
+      &-name,
       &-phone {
         color: #87878e;
+        outline: none;
         background-color: #3f434e;
+        transition-property: color, background-color;
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
+
+        &:focus {
+          color: #000000;
+          background-color: #ffffff;
+        }
+
+        &::placeholder {
+          color: #87878e;
+        }
       }
 
       &-button {
