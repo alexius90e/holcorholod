@@ -133,8 +133,17 @@
         text-transform: uppercase;
         text-align: center;
         color: #fff;
+        border: none;
         background-color: #131b2d;
+        transition-property: background-color, color;
+        transition-timing-function: ease-out;
+        transition-duration: 0.2s;
         cursor: pointer;
+
+        &:hover {
+          color: #131b2d;
+          background-color: #ffffff;
+        }
       }
     }
 

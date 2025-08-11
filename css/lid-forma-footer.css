@@ -171,8 +171,19 @@
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  border: none;
   background-color: #131b2d;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
   cursor: pointer;
+}
+.lid-forma-footer__callback-form-button:hover {
+  color: #131b2d;
+  background-color: #ffffff;
 }
 .lid-forma-footer__callback-disclaimer {
   margin: 13px 0 0;
